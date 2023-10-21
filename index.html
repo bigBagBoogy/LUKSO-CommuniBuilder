@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a Group</title>
+  </head>
+  <body>
+    <div>
+      <h1>Create a Group</h1>
+      <p>Name placeholder</p>
+      <p>Administrator</p>
+
+      <!-- Group Name Input -->
+      <label for="group-name">Group Name</label>
+      <input
+        type="text"
+        id="group-name"
+        name="group-name"
+        placeholder="Enter group name"
+        required
+      />
+
+      <!-- Privacy Selection -->
+      <label for="privacy">Choose Privacy</label>
+      <select id="privacy" name="privacy">
+        <option value="public">Public</option>
+        <option value="private">Private</option>
+      </select>
+
+      <!-- Invite Friends (Optional) -->
+      <label for="invite-friends">Invite Friends (optional)</label>
+      <input
+        type="text"
+        id="invite-friends"
+        name="invite-friends"
+        placeholder="Enter friend's name or email"
+      />
+
+      <!-- Submit Button -->
+      <button type="submit">Create Group</button>
+    </div>
+  </body>
+</html>
