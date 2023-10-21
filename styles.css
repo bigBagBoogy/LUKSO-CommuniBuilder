@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(255, 214, 245);
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  div {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #350640;
+  }
+  
+  /* Additional styling for the form elements (optional) */
+  label, input, select, button {
+    display: block;
+    margin: 10px 0;
+  }
+  
