@@ -186,3 +186,7 @@ To integrate with LUKSO Universal Profiles (UP) or interact with other smart con
 Choosing between web2 and web3 storage depends on factors like your project's level of decentralization, your desired level of control, and how you plan to integrate with other blockchain components. Using a smart contract to represent the group on the blockchain offers benefits in terms of transparency and decentralization but requires users to interact with the blockchain for group management. A centralized database may be simpler but is not as decentralized or transparent.
 
 You can also consider a hybrid approach where critical data is stored on the blockchain via smart contracts, while less critical data that requires high scalability and flexibility is stored in a traditional database. This approach allows you to leverage the strengths of both web2 and web3 technologies.
+
+# Data storage and handling:
+
+We opt for a hybrid approach where critical data is stored on the blockchain via smart contracts, while less critical data that requires high scalability and flexibility is stored in a traditional database. This approach allows us to leverage the strengths of both web2 and web3 technologies.
