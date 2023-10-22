@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="images/cube.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create a Group</title>
     <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="scripts/social-staking.js"></script>
   </head>
   <body>
     <div>
@@ -28,6 +30,23 @@
         <option value="public">Public</option>
         <option value="private">Private</option>
       </select>
+
+      <!-- "Micro Social Staking" Input -->
+      <label for="micro-social-staking">Micro Social Staking</label>
+      <input
+        type="checkbox"
+        id="micro-social-staking"
+        name="micro-social-staking"
+        value="enabled"
+      />
+      <label for="stake-amount">Stake Amount (if enabled)</label>
+      <input
+        type="number"
+        id="stake-amount"
+        name="stake-amount"
+        placeholder="Enter stake amount (e.g., 10 LYX)"
+        disabled
+      />
 
       <!-- Invite Friends (Optional) -->
       <label for="invite-friends">Invite Friends (optional)</label>
