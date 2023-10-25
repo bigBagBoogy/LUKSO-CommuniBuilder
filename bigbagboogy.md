@@ -11,7 +11,7 @@ Value: While this option might not have the same immediate impact as a fully fun
 git init
 git branch -M main
 git add .
-git commit -m "added apis.js"
+git commit -m "added scripts"
 git push -u origin main
 
 # to doo's:💡

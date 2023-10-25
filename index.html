@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CommuniBuilder</title>
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="scripts/social-staking.js"></script>
-    <script type="module" src="scripts/apis.js"></script>
+    <script type="module" src="social-staking.js"></script>
+    <script type="module" src="apis.js"></script>
+    <script type="module" src="interact-trough-up.js"></script>
   </head>
   <body>
     <div>
@@ -57,9 +58,13 @@
         name="invite-friends"
         placeholder="Enter friend's name or email"
       />
-
       <!-- Submit Button -->
       <button type="submit">Create Group</button>
+    </div>
+    <div>
+      <!-- Container for Owned Assets -->
+      <h2>Owned Assets</h2>
+      <ul id="owned-assets-list"></ul>
     </div>
   </body>
 </html>
