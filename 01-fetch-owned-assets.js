@@ -2,8 +2,8 @@
 console.log("01-fetch-owned-assets.js");
 // Imports
 import { ERC725 } from "@erc725/erc725.js";
-import erc725schema from "@erc725/erc725.js/schemas/LSP3ProfileMetadata.json";
-import Web3 from "web3.min.js";
+import erc725schema from "@erc725/erc725.js/schemas/LSP3ProfileMetadata.json" assert { type: "json" };
+import Web3 from "web3";
 import "isomorphic-fetch";
 
 // Static variables
@@ -34,6 +34,7 @@ async function displayOwnedAssets() {
     console.error("Error fetching owned assets: ", error);
   }
 }
+displayOwnedAssets();
 /*
  * Fetch the LSP5 data of the Universal Profile
  * to get its ever received assets
@@ -41,19 +42,19 @@ async function displayOwnedAssets() {
  * @param address of the Universal Profile
  * @return address[] of received assets or custom error
  */
-async function fetchOwnedAssets(address) {
-  try {
-    const profile = new ERC725(erc725schema, address, provider, config);
-    const result = await profile.fetchData("LSP5ReceivedAssets[]");
-    return result.value;
-  } catch (error) {
-    return console.log("This is not an ERC725 Contract: ", error);
-  }
-}
+// async function fetchOwnedAssets(address) {
+//   try {
+//     const profile = new ERC725(erc725schema, address, provider, config);
+//     const result = await profile.fetchData("LSP5ReceivedAssets[]");
+//     return result.value;
+//   } catch (error) {
+//     return console.log("This is not an ERC725 Contract: ", error);
+//   }
+// }
 
-// Debug
-fetchOwnedAssets(SAMPLE_PROFILE_ADDRESS).then((ownedAssets) =>
-  console.log(JSON.stringify(ownedAssets, undefined, 2))
-);
-// Call the function to display owned assets when the page loads
-window.addEventListener("load", displayOwnedAssets);
+// // Debug
+// fetchOwnedAssets(SAMPLE_PROFILE_ADDRESS).then((ownedAssets) =>
+//   console.log(JSON.stringify(ownedAssets, undefined, 2))
+// );
+// // Call the function to display owned assets when the page loads
+// window.addEventListener("load", displayOwnedAssets);
